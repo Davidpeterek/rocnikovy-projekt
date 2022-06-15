@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <title>Kviz</title>
+    <meta name="description" content="Webové stránky o Bamíku Ostrava">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://fcb.cz/img/fcb_logo.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-#0D6EFD">
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="../index.html">Menu
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../historie/index.html">Historie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../bazaly/index.html">Bazaly</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="../hraci/index.html">Hráči</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-white" href="../uspechy/index.html">Úspěchy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../test/index.html">Kvíz</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="https://fcb.cz">Oficiální stranky FCB</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <header class="visible">
+        <div class="container">
+            <h1 class="text-white display-3 ">Kvíz</h1>
+        </div>
+    </header>
+    <main class="container">
+        <form>
+            <p class="alert alert-info otazka">1. Kdy a kde byl založen FC Baník Ostrava</p>
+            <div class="form-group row">
+                <label for="listina" class="col-md-2 col-form-label text-white">Datum: (měsíc, rok) a místo</label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" name="listina" id="listina"
+                        placeholder="Napište datum a místo">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved1"> 8. září 1922 v hostinci u Dubu
+                </p>
+            <hr>
+            <p class="alert alert-info otazka">2. Kolik zápasů se odehrálo na Bazalech </p>
+            <div class="form-group row">
+                <label for="hra" class="col-md-2 col-form-label text-white">Zápasů</label>
+                <div class="col-md-2">
+                    <input type="number" class="form-control" name="zapas" id="zapas" 
+                        title="Zaddejte číslovku">
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved2">819</p>
+            <hr>
+            <hr>
+            <p class="alert alert-info otazka">3. Vyberte místo, kde nyní hraje Baník své domácí utkání .</p>
+            <div class="form-group row">
+                <div class="col-md-9">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label text-white">
+                            <input class="form-check-input" type="radio" name="stadion" id="ostrov" value="checkedValue">
+                            Střelecký Ostrov
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label text-white">
+                            <input class="form-check-input" type="radio" name="stadion" id="dolicek" value="checkedValue">
+                            Ďolíček
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label text-white">
+                            <input class="form-check-input" type="radio" name="stadion" id="letna" value="checkedValue">
+                            Letná
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label text-white">
+                            <input class="form-check-input" type="radio" name="stadion" id="mestskystadionostrava" value="checkedValue"> Městký stadion Ostrava-Vítkovice
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label text-white">
+                          <input class="form-check-input" type="radio" name="stadion" id="mestskystadionostrava-poruba" value="checkedValue"> Městký stadion Ostrava-Poruba
+                      </label>
+                  </div>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved5">Městký stadion Ostrava-Vítkovice
+               </p>
+
+            <hr>
+            <p class="alert alert-info otazka">4. Který hráč měl v sezoně 2021/2022 nastřílelo z Baníku nejvíc gólů?
+            </p>
+            <div class="form-group row">
+                <label for="sampion" class="col-md-2 col-form-label text-white">Jméno hráče</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="hrac" id="hrac">
+                        <option>Jan Laštůvka</option>
+                        <option>Filip Kaloč</option>
+                        <option>Ladislav Almási</option>
+                        <option>Daniel Tetour</option>
+                    </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved3">Ladislav Almási</p>
+
+            <p class="alert alert-info otazka">5. Jaké jsou klubové barvy Baníku?
+            </p>
+            <div class="form-group row">
+                <label for="sampion" class="col-md-2 col-form-label text-white">Barvy:</label>
+                <div class="col-md-10">
+                    <select class="form-control" name="sampion" id="sampion">
+                        <option>Černá a Modrá</option>
+                        <option>Modrá a Zelená</option>
+                        <option>Béžová a Fialová</option>
+                        <option>Modrá a Bílá</option>
+                        <option>Fialová a Modrá</option>
+                        <option>Bílá a Zelená</option>
+                    </select>
+                </div>
+            </div>
+            <p class="alert alert-success odpoved collapse multi-collapse" id="odpoved3">Modrá a Bílá
+            </p>
+            
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target=".multi-collapse"
+                        aria-expanded="false"
+                        aria-controls="odpoved1 odpoved2 odpoved3 odpoved4 odpoved5 odpoved6">Řešení testu</button>
+                </div>
+            </div>
+        </form>
+        <audio controls autoplay>
+          <source src="kdo_neni_zcuchany.ogg" type="audio/ogg">
+          <source src="kdo_neni_zcuchany.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+        </audio>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+    
+
+<footer class="text-center text-lg-start bg-light text-muted">
+
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Odkazy</h6>
+            <p>
+              <a href="https://fcb.cz" target="_blank" class="text-reset">FCB</a>
+            </p>
+            <p>
+              <a href="https://cs.wikipedia.org/wiki/FC_Ban%C3%ADk_Ostrava" target="_blank" class="text-reset">Wikipedia</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Kontakty</h6>
+            <p><i class="fas fa-home me-3"></i>Kravaře</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              david.peterek@email.cz
+            </p>
+            <p><i class="fas fa-phone me-3"></i>605487031</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center p-4 text-white" style="background-color: #0096ff">
+      <p>© 2022 David Peterek IT1</p>
+    </div>
+  </footer>
+</body>
+</html>

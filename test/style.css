@@ -1,0 +1,12 @@
+.visible {
+    visibility: visible;
+}
+
+
+
+body {
+    background-image: url('../test/img/fcb-lib.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
